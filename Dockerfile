@@ -2,8 +2,8 @@
 FROM node:alpine
 
 # Docker build arguments to customize image during build time
-ARG PORT=1998
-ARG MONGO_CSTRING=mongodb://localhost:27017/bin-store
+ARG PORT=8082
+ARG MONGO_CSTRING=mongodb://mongo:27017/bin-store
 
 # Set required environment variables
 ENV BIN_MONGO_CSTRING ${MONGO_CSTRING}
