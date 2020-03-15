@@ -1,5 +1,5 @@
-# Use the latest NodeJS image
-FROM node:latest
+# Use the latest NodeJS Alpine image
+FROM node:alpine
 
 # Docker build arguments to customize image during build time
 ARG PORT=1998
